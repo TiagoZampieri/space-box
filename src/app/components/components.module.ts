@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SpaceCardComponent } from './space-card/space-card.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [SpaceCardComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    SpaceCardComponent
   ]
 })
 export class ComponentsModule { }

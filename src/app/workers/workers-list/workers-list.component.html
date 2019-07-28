@@ -1,1 +1,9 @@
-<p>workers-list works!</p>
+<div class="workers-container">
+    <sb-space-card class="highlight-card"
+     [worker]="selected" [highlighted]="true"></sb-space-card>
+    <sb-space-card class="card-list" 
+    *ngFor="let item of workers" 
+    [worker]="item" [highlighted]="false" [body]="item === selected"
+    (click)="toggleSelected(item)"></sb-space-card>
+</div>
+

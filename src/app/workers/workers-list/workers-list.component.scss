@@ -1,0 +1,33 @@
+
+sb-space-card.highlight-card {
+    width: 100%;
+}
+
+sb-space-card.card-list {
+    width: 33%;
+    min-width: 33%;
+    cursor: pointer;
+}
+
+@media (min-width: 1500px) and (max-width: 1920px) {
+    sb-space-card.card-list {
+        width: 20%;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1300px) {
+    sb-space-card.card-list {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    sb-space-card.card-list {
+        width: 50%;
+    }   
+}
+
+.workers-container {
+    display: flex;
+    flex-wrap: wrap
+}

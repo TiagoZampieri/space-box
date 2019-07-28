@@ -1,0 +1,11 @@
+<div class="card-box" [ngClass]="{'invert-color': body}">
+    <div class="card-photo">
+        <img class="card-img" src="https://cloud.24ways.org/authors/alandalton280.jpg">
+        <span class="photo-badge">1</span>
+    </div>
+    <div class="card-ontent">
+        <h4 class="title">{{worker.nome}}</h4>
+        <p class="description">{{worker.cargo}}</p>
+        <p class="age" *ngIf="highlighted">{{worker.idade}}</p>
+    </div>
+</div>
